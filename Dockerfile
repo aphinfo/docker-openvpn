@@ -7,9 +7,7 @@ COPY ./files /usr/local/bin
 RUN apk add --no-cache openvpn git openssl iptables
 RUN git clone https://github.com/OpenVPN/easy-rsa.git /tmp/easy-rsa
 RUN apk del git
-RUN rm -rf /tmp/easy-rsa/.git
 RUN cp -a /tmp/easy-rsa /usr/local/share/
-RUN rm -rf /tmp/easy-rsa/
 RUN ln -s /usr/local/share/easy-rsa/easyrsa3/easyrsa /usr/local/bin
 RUN chmod 774 /usr/local/bin/*
 
