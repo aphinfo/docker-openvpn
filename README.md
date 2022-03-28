@@ -1,2 +1,6 @@
-# docker-openvpn
-Setup OpenVPN Server using Docker
+# OpenVPN Server
+Setup OpenVPN Server using Docker on Raspberry Pi 
+
+This is the first version and are constantly develop
+
+
